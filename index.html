@@ -199,7 +199,7 @@
         <h2 class="section-title">Men's Wardrobe</h2>
         <div class="grid">
             <div class="card">
-                <img src="images/mens1.avif" alt="The Modern Rancher" class="card-img">
+                <img src="./images/mens1.avif" alt="The Modern Rancher" class="card-img">
                 <div class="card-content">
                     <h3>1. The Modern Cattleman</h3>
                     <p>A sharp, contemporary take on ranch-ready layers that transition effortlessly from the field to
@@ -208,7 +208,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/mens2.jpg" alt="The Estate Manager" class="card-img">
+                <img src="./images/mens2.jpg" alt="The Estate Manager" class="card-img">
                 <div class="card-content">
                     <h3>2. The Black-Tie Rancher</h3>
                     <p>A sharp black suit paired with a matching cowboy hat for high-stakes western elegance.</p>
@@ -216,7 +216,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/mens3.jpg" alt="The Gentleman Cowboy" class="card-img">
+                <img src="./images/mens3.jpg" alt="The Gentleman Cowboy" class="card-img">
                 <div class="card-content">
                     <h3>3. The Heritage Explorer</h3>
                     <p>Layered textures of brown suede and striped cotton create a sophisticated, timeless frontier
@@ -225,7 +225,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/mens4.jpg" alt="The Lodge Professional" class="card-img">
+                <img src="./images/mens4.jpg" alt="The Lodge Professional" class="card-img">
                 <div class="card-content">
                     <h3>4. The Indigo Legend</h3>
                     <p>A classic denim-on-denim ensemble anchored by a structured blue v-neck and traditional felt hat.
@@ -234,7 +234,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/mens5.jfif" alt="The Range Coat" class="card-img">
+                <img src="./images/mens5.jfif" alt="The Range Coat" class="card-img">
                 <div class="card-content">
                     <h3>5. The City Outpost</h3>
                     <p>A versatile blend of structured tailoring and rugged denim, bridging urban style with western
@@ -243,7 +243,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/mens6.webp" alt="Texas Tuxedo Elevated" class="card-img">
+                <img src="./images/mens6.webp" alt="Texas Tuxedo Elevated" class="card-img">
                 <div class="card-content">
                     <h3>6. The Gentry Cowboy</h3>
                     <p>A light tan blazer and bolo tie offer a refined, formal take on traditional ranch attire.</p>
@@ -255,7 +255,7 @@
         <h2 class="section-title">Women's Wardrobe</h2>
         <div class="grid">
             <div class="card">
-                <img src="images/womens1.jpg" alt="The Prairie Sophisticate" class="card-img">
+                <img src="./images/womens1.jpg" alt="The Prairie Sophisticate" class="card-img">
                 <div class="card-content">
                     <h3>1. The Equestrian Muse</h3>
                     <p>An ethereal cream vest and flowing skirt capture the graceful spirit of life on the range.</p>
@@ -263,7 +263,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/womens2.webp" alt="The Santa Fe Suit" class="card-img">
+                <img src="./images/womens2.webp" alt="The Santa Fe Suit" class="card-img">
                 <div class="card-content">
                     <h3>2. The Canyon Chic</h3>
                     <p>Dark denim layers and a wide-brimmed hat provide a modern, feminine edge to rugged utility.</p>
@@ -271,7 +271,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/womens3.jpg" alt="The Hacienda Dress" class="card-img">
+                <img src="./images/womens3.jpg" alt="The Hacienda Dress" class="card-img">
                 <div class="card-content">
                     <h3>3. The Frontier Belle</h3>
                     <p>A vintage-inspired paisley dress and leather boots evoke the timeless elegance of the prairie.
@@ -281,7 +281,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/womens4.jpg" alt="The Suede Sovereign" class="card-img">
+                <img src="./images/womens4.jpg" alt="The Aspen Wrap" class="card-img">
                 <div class="card-content">
                     <h3>4. The Suede Sovereign</h3>
                     <p>Rich, monochrome suede textures and long fringe details command attention with sophisticated
@@ -291,7 +291,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/womens5.jpg" alt="Winter White" class="card-img">
+                <img src="./images/womens5.jpg" alt="Winter White" class="card-img">
                 <div class="card-content">
                     <h3>5. The Nomad Queen</h3>
                     <p>A dramatic suede duster with heavy fringe over crisp white trousers for a bold, desert-inspired
@@ -301,7 +301,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/womens6.webp" alt="Workwear Chic" class="card-img">
+                <img src="./images/womens6.webp" alt="Workwear Chic" class="card-img">
                 <div class="card-content">
                     <h3>6. The Aspen Alpine</h3>
                     <p>A luxurious cable-knit sweater and floor-length fur-trimmed coat for high-altitude elegance and
@@ -318,22 +318,6 @@
         </div>
 
     </div>
-
-    <script>
-        // Emergency Fallback Script
-        // If an image fails to load, this script tries absolute-style local paths
-        document.addEventListener('error', function (e) {
-            if (e.target.tagName === 'IMG') {
-                const currentSrc = e.target.getAttribute('src');
-                if (currentSrc && !currentSrc.startsWith('file:///')) {
-                    console.log('Image failed, trying absolute-style path for:', currentSrc);
-                    // Try to convert to full local file URL just in case
-                    const base = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-                    e.target.src = base + currentSrc + '?retry=' + Date.now();
-                }
-            }
-        }, true);
-    </script>
 </body>
 
 </html>
